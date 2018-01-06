@@ -1,8 +1,11 @@
 让nginx支持PATHINFO模式的配置:
-server {
-    listen       80;
+================
+```
+server {  
+    listen       80; 
     server_name  localhost;
-
+    
+    
     #charset koi8-r;
     #access_log  /var/log/nginx/host.access.log  main;
     set $root /usr/share/nginx/html;
@@ -43,12 +46,12 @@ server {
     #	}
     #}
     location ~ \.php($|/) {
-        #root           /usr/share/nginx/html;
+        #root  /usr/share/nginx/html;
         fastcgi_pass   127.0.0.1:9000;
-	      fastcgi_split_path_info ^((?U).+.php)(/?.+)$;
-	      fastcgi_param PATH_INFO $fastcgi_path_info;
+	fastcgi_split_path_info ^((?U).+.php)(/?.+)$;
+	fastcgi_param PATH_INFO $fastcgi_path_info;
         fastcgi_index  index.php;
-	      fastcgi_param  PATH_TRANSLATED  $document_root$fastcgi_path_info;
+	fastcgi_param  PATH_TRANSLATED  $document_root$fastcgi_path_info;
         fastcgi_param  SCRIPT_FILENAME  $root$fastcgi_script_name;
         include        fastcgi_params;
     }
@@ -60,4 +63,5 @@ server {
     #    deny  all;
     #}
 }
+```
 
