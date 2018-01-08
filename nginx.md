@@ -39,12 +39,12 @@ server {  
     #}
 
     # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-    #
-    #location /tp5/public/ {
-    #	if (!-e $request_filename){
-    #		rewrite ^/tp5/public/(.*)$ /tp5/public/index.php/$1 last;
-    #	}
-    #}
+    #隐藏入口文件的设置
+    location /tp5/public/ {
+    	if (!-e $request_filename){
+    		rewrite ^/tp5/public/(.*)$ /tp5/public/index.php/$1 last;
+    	}
+    }
     location ~ \.php($|/) {
         #root  /usr/share/nginx/html;
         fastcgi_pass   127.0.0.1:9000;
