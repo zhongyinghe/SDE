@@ -4,3 +4,5 @@
 * 2 [网络命令](command_net.md)
 * 3 [php相关配置](php.md)
 * 4 [硬件安装和故障](hardware-install.md)
+* 5 [git使用](#)
+* 5.1 [git服务器搭建](git-server.md)
