@@ -75,3 +75,13 @@ git:x:502:504::/home/git:/bin/bash
 ```
 git:x:502:504::/home/git:/bin/git-shell
 ```
+### 补充多个用户使用git服务问题
+```
+$ ssh git@192.168.1.120 'cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
+$ ssh git@192.168.1.120 'cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
+$ ssh git@192.168.1.120 'cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
+```
+每台机子都类似这样把公钥放到git目录下的authorized_keys文件中<br>
+也可以把git服务器机子的公钥放到git用户的目录下
+```
+cat id_rsa.pub >> /home/git/.ssh/authorized_keys
