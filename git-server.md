@@ -85,3 +85,11 @@ $ ssh git@192.168.1.120 'cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 也可以把git服务器机子的公钥放到git用户的目录下
 ```
 cat id_rsa.pub >> /home/git/.ssh/authorized_keys
+```
+### 注意
+```
+关于把公钥放到服务器了还要输入密码的原因:把项目拥有者改为当前用户，这样就不用每次都输入密码
+
+
+known_hosts有了第一次记录后，如果第二次重装了系统，同一个ip,则需要把里面对应的内容删除掉
+```
