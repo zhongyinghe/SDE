@@ -8,3 +8,4 @@
 * 4 [硬件安装和故障](hardware-install.md)
 * 5 [git使用](#)
 * 5.1 [git服务器搭建](git-server.md)
+* 5.2 [git问答](git-qa.md)
