@@ -20,3 +20,7 @@ tar
 常用的是
 tar -C 目标目录 -xzvf xxx.tar.gz
 ```
+4、查看文件最后20行
+```
+tail -20 xxxx文件
+```
