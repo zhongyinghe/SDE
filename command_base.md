@@ -24,3 +24,15 @@ tar -C 目标目录 -xzvf xxx.tar.gz
 ```
 tail -20 xxxx文件
 ```
+5、链接文件
+```
+ln 源文件(绝对路径) 目标文件
+如:
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime //s代表软链接;f代表强制替换或者覆盖
+```
+6、时间查看
+```
+date命令
+date 23:00:00 //设置时间
+hwclock -w //写入硬件，防止重启失效
+```
