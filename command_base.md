@@ -36,3 +36,10 @@ date命令
 date 23:00:00 //设置时间
 hwclock -w //写入硬件，防止重启失效
 ```
+7、查看Linux内存
+```
+free -m 以MB为单位显示容量
+free -g 以GB为单位显示容量
+含义:
+total:总计物理内存的大小；used:已使用的内存大小；free:可用的内存大小；Shared:多个进程共享的内存总额；Buffers/cached:磁盘缓存的大小。
+```
