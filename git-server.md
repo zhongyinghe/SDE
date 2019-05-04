@@ -1,3 +1,12 @@
+### 重点内容
+
+>>2、在服务端创建git仓库
+
+>>3、在window新建目录，并使用git bash输入如下命令
+
+>>关于项目和远程仓库关联
+
+
 1、创建git用户
 ```
 [root@localhost home]# id git
