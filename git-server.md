@@ -93,3 +93,11 @@ cat id_rsa.pub >> /home/git/.ssh/authorized_keys
 
 known_hosts有了第一次记录后，如果第二次重装了系统，同一个ip,则需要把里面对应的内容删除掉
 ```
+### 关于项目和远程仓库关联
+```
+git add
+git commit -m
+
+git remote add origin git@127.0.0.1:/home/repository/abc.git
+git push -u origin master
+```
