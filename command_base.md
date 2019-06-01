@@ -43,3 +43,8 @@ free -g 以GB为单位显示容量
 含义:
 total:总计物理内存的大小；used:已使用的内存大小；free:可用的内存大小；Shared:多个进程共享的内存总额；Buffers/cached:磁盘缓存的大小。
 ```
+8、关机和重启命令
+```
+shutdown -h now //立刻关机
+shutdown -r now //立刻重启
+```
