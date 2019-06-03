@@ -13,3 +13,5 @@
 * 7 [docker](#)
 * 7.1 [docker部署go项目配置](docker-go.md)
 * 7.2 [脚本化docker示例](shell-docker.md)
+* 8 [shell学习](#)
+* 8.1 [shell-if的认识](shell-if.md)
