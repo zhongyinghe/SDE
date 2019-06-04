@@ -45,3 +45,38 @@ RUN go install
 ```
 CMD /home/app/ws/bin/web
 ```
+
+### 相似的Dockerfile
+```
+FROM centos:7
+
+MAINTAINER simon
+
+#install env
+RUN yum install -y gcc
+RUN yum install -y epel-release
+RUN yum install -y golang
+
+#config go
+ENV GOROOT /usr/lib/golang
+ENV PATH=$PATH:/usr/lib/golang/bin
+
+#config GOPATH
+RUN mkdir -p /home/app/ws
+RUN mkdir -p /home/app/ws/src
+RUN mkdir -p /home/app/ws/bin
+RUN mkdir -p /home/app/ws/pkg
+ENV GOPATH /home/app/ws
+
+#copy source files
+#RUN mkdir -p /home/app/ws/src/web
+ADD ./src /home/app/ws/src
+
+#build the server
+WORKDIR /home/app/ws/src/web
+
+RUN go install
+
+#start the server
+CMD /home/app/ws/bin/web
+```
