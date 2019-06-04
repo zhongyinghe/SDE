@@ -12,6 +12,7 @@
 * 6 [服务启动命令](service_start.md)
 * 7 [docker](#)
 * 7.1 [docker部署go项目配置](docker-go.md)
+* 7.1.2 [golang的简易Dockerfile](docker-golang.md)
 * 7.2 [脚本化docker示例](shell-docker.md)
 * 7.2.2 [脚本化docker示例2](shell-docker2.md)
 * 8 [shell学习](#)
