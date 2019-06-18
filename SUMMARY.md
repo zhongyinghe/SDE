@@ -17,3 +17,6 @@
 * 7.2.2 [脚本化docker示例2](shell-docker2.md)
 * 8 [shell学习](#)
 * 8.1 [shell-if的认识](shell-if.md)
+* 9 [安全设置](#)
+* 9.1 [firewall的使用](firewall.md)
+* 10 [Linux系统认识](#)
