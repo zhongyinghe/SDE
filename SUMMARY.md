@@ -10,6 +10,8 @@
 * 5.1 [git服务器搭建](git-server.md)
 * 5.2 [git问答](git-qa.md)
 * 5.3 [git在生产环境中使用](git-prod.md)
+* 5.4 [分支管理](分支管理.md)
+* 5.10 [git的详细文档](https://git-scm.com/book/zh/v2)
 * 6 [服务启动命令](service_start.md)
 * 7 [docker](#)
 * 7.1 [docker部署go项目配置](docker-go.md)
