@@ -92,3 +92,12 @@ firewall-cmd --remove-forward-port=port=80:proto=tcp:toport=8080 --permanent
 ```
 firewall-cmd --reload
 ```
+### 7、个人使用—添加端口
+1)添加端口
+```
+firwall-cmd --permanent --add-port=9527/tcp
+```
+2)删除端口
+```
+firwall-cmd --permanent --remove-port=9527/tcp
+```
