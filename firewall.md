@@ -95,9 +95,13 @@ firewall-cmd --reload
 ### 7、个人使用—添加端口
 1)添加端口
 ```
-firwall-cmd --permanent --add-port=9527/tcp
+firewall-cmd --permanent --add-port=9527/tcp
 ```
 2)删除端口
 ```
-firwall-cmd --permanent --remove-port=9527/tcp
+firewall-cmd --permanent --remove-port=9527/tcp
+```
+### 注意
+```
+在远程连接不了时，注意查看firewall是否开放了相关端口
 ```
