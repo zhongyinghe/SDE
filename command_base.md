@@ -48,3 +48,19 @@ total:总计物理内存的大小；used:已使用的内存大小；free:可用�
 shutdown -h now //立刻关机
 shutdown -r now //立刻重启
 ```
+
+9、修改用户密码
+```
+[root@localhost ~]#  passwd  ##修改root用户密码
+Changing password for user root..
+New password: ##输入新密码
+Retype new password:  ##再次确认新密码
+passwd: all authentication tokens updated successfully.
+```
+```
+[root@localhost ~]# passwd hadoop  ##修改hadoop用户密码
+Changing password for user hadoop.
+New password:  ##输入新密码
+Retype new password:  ##再次确认新密码
+passwd: all authentication tokens updated successfully.
+```
